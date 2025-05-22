@@ -14,12 +14,10 @@ import (
 )
 
 func main() {
-	// Load environment variables
 	if err := godotenv.Load(); err != nil {
 		log.Printf("Warning: .env file not found")
 	}
 
-	// Initialize configuration
 	cfg := config.New()
 
 	// Initialize Redis storage
